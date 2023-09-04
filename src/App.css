@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: clamp(200px, 350px, 100%);
+  min-height: 100px;
+  background-color: hsl(217, 19%, 24%);
+  padding: 1rem;
+  border-radius: 5px;
+  color: hsl(193, 38%, 86%);
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.id {
+  padding: 1rem;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3px;
+  font-size: 0.5rem;
+}
+
+.divider {
+  max-width: 100%;
+  padding: 1.5rem 0;
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  padding: 0.75rem;
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+button:hover {
+  box-shadow: 0 0 15px 7px rgba(82, 255, 168, 0.3);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
